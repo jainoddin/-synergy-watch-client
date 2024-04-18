@@ -1,0 +1,161 @@
+.sidebar-components {
+  background-color: aliceblue;
+  height: 200vh;
+  display: flex;
+  position: fixed;
+  top: 15%;
+  width: 23%;
+  left: 0;
+}
+#btnl {
+  position: absolute;
+  top: 38%;
+  left: 15%;
+
+}
+#q{
+  color: black;
+  text-decoration: none;
+  transition: 0.3s ease-in-out;
+}
+#q:hover{
+  color: rgb(89, 229, 229);
+}
+#q:hover::after
+{
+  content: "";
+  width: 30%;
+  height: 2px;
+  background-color: rgb(173, 239, 239);
+  position: absolute;
+  bottom: -4px;
+  left: 50px;
+}
+
+
+.sidebar_content{
+  font-size: 150%;
+
+}
+
+body {
+  overflow: hidden;
+  display: flex;
+}
+body {
+  overflow-x: hidden;
+}
+.sidebar-content i {
+  font-size: 30px;
+}
+.a {
+  text-align: start;
+}
+.sidebar-content {
+  font-size: 20px;
+  position: relative;
+  left: 15%;
+}
+#sidebar {
+  overflow-y: hidden;
+}
+/* Add this to your CSS file */
+
+
+
+
+
+@media (max-width: 768px) {
+  .sidebar-components {
+    background-color: aliceblue;
+    height: 200vh;
+    display: flex;
+    position: fixed;
+    top: 13%;
+    width: 25%;
+    left: 0;
+    transition: width 0.5s ease;
+  }
+  body {
+    overflow-x: hidden;
+  }
+
+  .sidebar-components .sidebar-content p {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+  }
+
+  .sidebar-components .sidebar-content p i {
+    margin-right: 0;
+    display: flex;
+  }
+
+  .sidebar-components:hover {
+    width: 200px;
+    transition: width 0.5s ease;
+    display: flex;
+  }
+
+  .sidebar-components:hover .sidebar-content p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .sidebar-components:hover .sidebar-content p i {
+    margin-right: 10px;
+    display: flex;
+  }
+}
+@media (max-width: 320px) {
+  .sidebar-content i {
+    font-size: 10px;
+  }
+  body {
+    overflow-x: hidden;
+  }
+  #q {
+    font-size: 10px;
+    position: fixed;
+    left: 7%;
+  }
+
+  .sidebar-components {
+    background-color: aliceblue;
+    height: 200vh;
+    position: fixed;
+    top: 12%;
+    width: 25%;
+    left: 0;
+  }
+
+  #home {
+    position: fixed;
+    top: 12%;
+    left: 3%;
+  }
+  #trending {
+    position: fixed;
+    top: 17%;
+    left: 2%;
+  }
+  #gamming {
+    position: fixed;
+    top: 22%;
+    left: 3%;
+  }
+  .sidebar_content{
+    font-size: 70%;
+  
+  }
+  #saved {
+    position: fixed;
+    top: 27%;
+    left: 3%;
+  }
+}
+.dark-mode {
+  background-color: black;
+}
